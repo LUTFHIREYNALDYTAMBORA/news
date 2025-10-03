@@ -48,7 +48,7 @@ export default function Home() {
               height={300}
               className="w-full h-auto rounded-md my-4"
             />
-            <p className="text-xs text-gray-500 float-right">Source : google.com</p>
+            <p className="text-xs text-gray-500 float-right italic mt-[-10px]">Source : google.com</p>
           </>
         )}
         <div className="mt-4 text-sm mt-10">Penulis : <b>{data?.writer}</b></div>
