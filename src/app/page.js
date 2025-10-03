@@ -27,7 +27,6 @@ export default function Home() {
 
   console.log(data, '<<< data');
   
-  // Menampilkan pesan loading jika data belum siap
   if (!data) {
     return (
       <main className="flex min-h-screen items-center justify-center">
@@ -43,11 +42,11 @@ export default function Home() {
         {data?.image && (
           <>
             <Image
-              src={`/assets/${data.image}.jpg`} // Path dari folder public
+              src={`/assets/${data.image}.jpg`}
               alt=''
-              width={500} // Lebar gambar (wajib)
-              height={300} // Tinggi gambar (wajib)
-              className="w-full h-auto rounded-md my-4" // Styling agar responsif
+              width={500}
+              height={300}
+              className="w-full h-auto rounded-md my-4"
             />
             <p className="text-xs text-gray-500 float-right">Source : google.com</p>
           </>
@@ -56,7 +55,7 @@ export default function Home() {
         <div className="text-sm">Editor : <b>{data?.editor}</b></div>
         <div className="text-sm mb-10">Tanggal : <b>{moment(data?.date).locale('id').format('DD MMMM YYYY, hh:mm')} WIB</b></div>
         <div className="mt-4 text-justify leading-relaxed">
-          {data?.content.split('\n').map((paragraph, index) => (
+          {data?.content?.split('\n').map((paragraph, index) => (
             <p key={index} className="mb-4">{paragraph}</p>
           ))}
         </div>
