@@ -6,6 +6,7 @@ import StartFirebase from '../utils/configFirebase';
 import Image from "next/image";
 import moment from "moment";
 import 'moment/locale/id';
+import { CircularProgress } from "@mui/material";
 
 const db = StartFirebase();
 
@@ -25,12 +26,10 @@ export default function Home() {
     });
   }, []);
 
-  console.log(data, '<<< data');
-  
   if (!data) {
     return (
       <main className="flex min-h-screen items-center justify-center">
-        <p>Loading...</p>
+        <CircularProgress />
       </main>
     );
   }
@@ -39,6 +38,7 @@ export default function Home() {
     <main className="flex h-fit items-center justify-center m-4">
       <div className="border-[1px] w-full max-w-[500px] rounded-lg p-4">
         <h1 className="text-2xl font-bold">{data.title}</h1>
+        <hr className="my-4"/>
         {data?.image && (
           <>
             <Image
