@@ -14,12 +14,13 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "StreamOne.news",
   description: "StreamOne.news",
+  keywords: "berita, terkini, streamone, news",
   openGraph: {
     title: "StreamOne.news",
     description: "StreamOne.news",
     images: [
       {
-        url: "../../public/assets/demo1.png",
+        url: "/assets/demo1.png",
         width: 1200,
         height: 630,
       },
