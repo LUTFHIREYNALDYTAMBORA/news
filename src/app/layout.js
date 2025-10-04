@@ -19,7 +19,7 @@ export const metadata = {
     description: "StreamOne.news",
     images: [
       {
-        url: "/public/assets/demo1.png",
+        url: "../../public/assets/demo1.png",
         width: 1200,
         height: 630,
       },
