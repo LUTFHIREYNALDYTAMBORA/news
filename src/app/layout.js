@@ -54,22 +54,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <title>StreamOne.news</title>
-      <meta name="title" content="StreamOne.news" />
-      <meta name="description" content="StreamOne.news" />
-
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://news-topaz-chi.vercel.app/" />
-      <meta property="og:title" content="StreamOne.news" />
-      <meta property="og:description" content="StreamOne.news" />
-      <meta property="og:image" content="https://news-topaz-chi.vercel.app/assets/demo1.jpg" />
-
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://news-topaz-chi.vercel.app/" />
-      <meta property="twitter:title" content="StreamOne.news" />
-      <meta property="twitter:description" content="StreamOne.news" />
-      <meta property="twitter:image" content="https://news-topaz-chi.vercel.app/assets/demo1.jpg" />
-
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
