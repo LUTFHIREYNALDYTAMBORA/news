@@ -12,6 +12,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  // Ganti 'https://your-domain.com' dengan URL produksi situs Anda.
+  // Ini akan memastikan semua URL relatif (seperti gambar) menjadi absolut.
+  metadataBase: new URL("https://news-topaz-chi.vercel.app/"),
   title: "StreamOne.news",
   description: "StreamOne.news",
   keywords: "berita, terkini, streamone, news",
