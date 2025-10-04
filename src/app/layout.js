@@ -36,8 +36,6 @@ export const metadata = {
   },
   icons: {
     icon: "/favicon.ico", // Path ke favicon Anda di folder public
-    apple: "/apple-touch-icon.jpg", // Untuk perangkat Apple
-    shortcut: "/favicon-16x16.jpg", // Contoh lain
   },
   other: {
     // Contoh untuk <link rel="preconnect" ...>
@@ -52,7 +50,7 @@ export const metadata = {
     "preload-image-example": {
       rel: "preload",
       as: "image",
-      href: "https://assets.pikiran-rakyat.com/crop/0x0:0x0/1200x675/photo/2025/09/12/2914343594.jpg",
+      href: "/assets/demo1.jpg",
     },
   },
 };
@@ -60,6 +58,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <title>StreamOne.news</title>
+      <meta name="title" content="StreamOne.news" />
+      <meta name="description" content="StreamOne.news" />
+
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://news-topaz-chi.vercel.app/" />
+      <meta property="og:title" content="StreamOne.news" />
+      <meta property="og:description" content="StreamOne.news" />
+      <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://news-topaz-chi.vercel.app/" />
+      <meta property="twitter:title" content="StreamOne.news" />
+      <meta property="twitter:description" content="StreamOne.news" />
+      <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
