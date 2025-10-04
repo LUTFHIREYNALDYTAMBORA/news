@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import img from '../assets/demo1.png';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,7 +20,7 @@ export const metadata = {
     description: "StreamOne.news",
     images: [
       {
-        url: img,
+        url: "/assets/demo1.png",
         width: 1200,
         height: 630,
       },
@@ -32,7 +31,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "StreamOne.news",
     description: "StreamOne.news",
-    images: [img],
+    images: ["/assets/demo1.png"],
   },
 };
 
