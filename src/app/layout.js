@@ -12,8 +12,6 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  // Ganti 'https://your-domain.com' dengan URL produksi situs Anda.
-  // Ini akan memastikan semua URL relatif (seperti gambar) menjadi absolut.
   metadataBase: new URL("https://news-topaz-chi.vercel.app/"),
   title: "StreamOne.news",
   description: "StreamOne.news",
@@ -23,7 +21,7 @@ export const metadata = {
     description: "StreamOne.news",
     images: [
       {
-        url: "/assets/demo1.png",
+        url: "/assets/demo1.jpg",
         width: 1200,
         height: 630,
       },
@@ -34,12 +32,12 @@ export const metadata = {
     card: "summary_large_image",
     title: "StreamOne.news",
     description: "StreamOne.news",
-    images: ["/assets/demo1.png"],
+    images: ["/assets/demo1.jpg"],
   },
   icons: {
     icon: "/favicon.ico", // Path ke favicon Anda di folder public
-    apple: "/apple-touch-icon.png", // Untuk perangkat Apple
-    shortcut: "/favicon-16x16.png", // Contoh lain
+    apple: "/apple-touch-icon.jpg", // Untuk perangkat Apple
+    shortcut: "/favicon-16x16.jpg", // Contoh lain
   },
   other: {
     // Contoh untuk <link rel="preconnect" ...>
