@@ -19,13 +19,8 @@ export const metadata = {
   openGraph: {
     title: "StreamOne.news",
     description: "StreamOne.news",
-    images: [
-      {
-        url: "/assets/demo1.jpg",
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: ["/assets/demo1.jpg"],
+    url: "https://news-topaz-chi.vercel.app/",
     type: "website",
   },
   twitter: {
@@ -33,6 +28,7 @@ export const metadata = {
     title: "StreamOne.news",
     description: "StreamOne.news",
     images: ["/assets/demo1.jpg"],
+    creator: '@NamaAkunXAnda',
   },
   icons: {
     icon: "/favicon.ico", // Path ke favicon Anda di folder public
