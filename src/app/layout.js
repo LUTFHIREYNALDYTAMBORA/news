@@ -66,13 +66,13 @@ export default function RootLayout({ children }) {
       <meta property="og:url" content="https://news-topaz-chi.vercel.app/" />
       <meta property="og:title" content="StreamOne.news" />
       <meta property="og:description" content="StreamOne.news" />
-      <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+      <meta property="og:image" content="https://news-topaz-chi.vercel.app/assets/demo1.jpg" />
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://news-topaz-chi.vercel.app/" />
       <meta property="twitter:title" content="StreamOne.news" />
       <meta property="twitter:description" content="StreamOne.news" />
-      <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+      <meta property="twitter:image" content="https://news-topaz-chi.vercel.app/assets/demo1.jpg" />
 
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
