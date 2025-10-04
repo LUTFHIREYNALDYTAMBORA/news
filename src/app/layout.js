@@ -33,6 +33,27 @@ export const metadata = {
     description: "StreamOne.news",
     images: ["/assets/demo1.png"],
   },
+  icons: {
+    icon: "/favicon.ico", // Path ke favicon Anda di folder public
+    apple: "/apple-touch-icon.png", // Untuk perangkat Apple
+    shortcut: "/favicon-16x16.png", // Contoh lain
+  },
+  other: {
+    // Contoh untuk <link rel="preconnect" ...>
+    "preconnect-fonts-gstatic": {
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com",
+      crossOrigin: "anonymous",
+    },
+    // Contoh untuk <link rel="stylesheet" ...>
+    "google-fonts": "https://fonts.googleapis.com/css2?family=Roboto&display=swap",
+    // Menambahkan link preload untuk gambar
+    "preload-image-example": {
+      rel: "preload",
+      as: "image",
+      href: "https://assets.pikiran-rakyat.com/crop/0x0:0x0/1200x675/photo/2025/09/12/2914343594.jpg",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
