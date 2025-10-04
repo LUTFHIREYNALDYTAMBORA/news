@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,21 +27,18 @@ export const metadata = {
     ],
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "StreamOne.news",
+    description: "StreamOne.news",
+    images: ["/assets/demo1.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <title>StreamOne.news</title>
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="StreamOne.news" />
-        <meta name="twitter:description" content="" />
-        <meta name="twitter:image" content="/assets/demo1.png" />
-      </Head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
