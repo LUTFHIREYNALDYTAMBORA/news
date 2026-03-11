@@ -19,7 +19,7 @@ export const metadata = {
   openGraph: {
     title: "StreamOne.news",
     description: "StreamOne.news",
-    images: ["/assets/demo1.jpg"],
+    images: ["/assets/gambar2.jpeg.jpg"],
     url: "https://news-topaz-chi.vercel.app/",
     type: "website",
   },
@@ -27,7 +27,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "StreamOne.news",
     description: "StreamOne.news",
-    images: ["/assets/demo1.jpg"],
+    images: ["/assets/gambar2.jpeg.jpg"],
     creator: '@NamaAkunXAnda',
   },
   icons: {
@@ -46,7 +46,7 @@ export const metadata = {
     "preload-image-example": {
       rel: "preload",
       as: "image",
-      href: "/assets/demo1.jpg",
+      href: "/assets/gambar2.jpeg.jpg",
     },
   },
 };
