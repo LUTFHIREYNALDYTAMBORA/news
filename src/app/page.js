@@ -13,6 +13,8 @@ const db = StartFirebase();
 export default function Home() {
   const [data, setData] = useState(null);
 
+  console.log(data)
+
   useEffect(() => {
     const dbRef = ref(db);
     onValue(dbRef, (snapshot) => {
@@ -42,7 +44,7 @@ export default function Home() {
         {data?.image && (
           <>
             <Image
-              src={`/assets/${data.image}.jpg`}
+              src={`/assets/${data.image}.jpeg`}
               alt=''
               width={500}
               height={300}
