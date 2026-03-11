@@ -55,7 +55,7 @@ export default function Home() {
         )}
         <div className="mt-4 text-sm mt-10">Penulis : <b>{data?.writer}</b></div>
         <div className="text-sm">Editor : <b>{data?.editor}</b></div>
-        <div className="text-sm mb-10">Tanggal : <b>{moment(data?.date).locale('id').format('DD MMMM YYYY, hh:mm')} WIB</b></div>
+        <div className="text-sm mb-10">Tanggal : <b>{moment(data?.date, "DD-MM-YYYY HH:mm").locale('id').format('DD MMMM YYYY, hh:mm')} WIB</b></div>
         <div className="mt-4 text-justify leading-relaxed">
           {data?.content?.split('\n').map((paragraph, index) => (
             <p key={index} className="mb-4">{paragraph}</p>
